@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import { Header } from "./header";
-import Footer from "./footer";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
+import { Header } from './header';
+import Footer from './footer';
 import { Analytics } from '@vercel/analytics/react';
+
 export const metadata: Metadata = {
-  title: "Lauryn Robson",
-  description: "This is the official website of Lauryn Robson",
+  title: 'Lauryn Robson',
+  description: 'This is the official website of Lauryn Robson',
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <Header />
         {children}

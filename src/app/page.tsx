@@ -8,8 +8,17 @@ import image5 from '../../public/home/5.jpg';
 import image6 from '../../public/home/6.jpg';
 import image7 from '../../public/home/7.jpg';
 export default function Page() {
+  const people = [
+    {
+      name: 'Leslie Alexander',
+      role: 'Co-Founder / CEO',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    // More people...
+  ];
   return (
-    <div className='py-32'>
+    <div className='py-10'>
       <div className='relative overflow-hidden bg-white'>
         <div className='pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40'>
           <div className='relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8'>
@@ -18,8 +27,9 @@ export default function Page() {
                 Welcome to my corner of the internet.
               </h1>
               <p className='mt-4 text-xl text-gray-500'>
-                Hi! I am Lauryn Robson. A junior software Proud light mode user
-                and magazine collector.
+                Hey, my name is Lauryn and welcome to my personal website! I am
+                junior software engineer, proud light mode user and magazine
+                collector.
               </p>
             </div>
             <div>
@@ -94,7 +104,45 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Link className='lg:hidden text-3xl font-bold underline' href='/'>
+      <div className='bg-white py-24 sm:py-32'>
+        <div className='mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3'>
+          <div className='max-w-xl'>
+            <h2 className='text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl'>
+              Meet our leadership
+            </h2>
+            <p className='mt-6 text-lg/8 text-gray-600'>
+              We’re a dynamic group of individuals who are passionate about what
+              we do and dedicated to delivering the best results for our
+              clients.
+            </p>
+          </div>
+          <ul
+            role='list'
+            className='grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2'
+          >
+            {people.map((person) => (
+              <li key={person.name}>
+                <div className='flex items-center gap-x-6'>
+                  <img
+                    alt=''
+                    src={person.imageUrl}
+                    className='size-16 rounded-full'
+                  />
+                  <div>
+                    <h3 className='text-base/7 font-semibold tracking-tight text-gray-900'>
+                      {person.name}
+                    </h3>
+                    <p className='text-sm/6 font-semibold text-indigo-600'>
+                      {person.role}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <Link className='hidden' href='/'>
         Home
       </Link>
     </div>
