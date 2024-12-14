@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center">
-              <img
+            <Link href="/" className="flex items-center">
+              <Image
                 src={"/apple-touch-icon.png"}
                 className="mr-3 h-20"
                 alt={"Lauryn Robson logo"}
               />
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
