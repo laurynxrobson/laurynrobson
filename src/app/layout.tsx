@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./header";
 import Footer from "./footer";
+import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
   title: "Lauryn Robson",
   description: "This is the official website of Lauryn Robson",
