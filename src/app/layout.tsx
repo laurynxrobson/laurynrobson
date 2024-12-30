@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from './header';
 import Footer from './footer';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'Lauryn Robson',
@@ -20,8 +21,9 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <Analytics />
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
