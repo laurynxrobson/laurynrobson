@@ -24,13 +24,13 @@ export default function Page() {
           <div className='relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8'>
             <div className='sm:max-w-lg'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                Welcome to my corner of the internet.
+                Coming Soon...
               </h1>
-              <p className='mt-4 text-xl text-gray-500'>
+              {/* <p className='mt-4 text-xl text-gray-500'>
                 Hey, my name is Lauryn and welcome to my personal website! I am
                 junior software engineer, proud light mode user and magazine
                 collector.
-              </p>
+              </p> */}
             </div>
             <div>
               <div className='mt-10'>
@@ -39,7 +39,7 @@ export default function Page() {
                   aria-hidden='true'
                   className='pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl'
                 >
-                  <div className='absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8'>
+                  {/* <div className='absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8'>
                     <div className='flex items-center space-x-6 lg:space-x-8'>
                       <div className='grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8'>
                         <div className='h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100'>
@@ -97,14 +97,14 @@ export default function Page() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='bg-white py-24 sm:py-32'>
+      {/* <div className='bg-white py-24 sm:py-32'>
         <div className='mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3'>
           <div className='max-w-xl'>
             <h2 className='text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl'>
@@ -141,7 +141,7 @@ export default function Page() {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
       <Link className='hidden' href='/'>
         Home
       </Link>
