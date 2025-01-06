@@ -81,7 +81,7 @@ export default function Page() {
                         </div>
                       </div>
                       <div className='grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8'>
-                        <div className='h-64 w-56 overflow-hidden rounded-lg'>
+                        <div className='h-64 w-44 overflow-hidden rounded-lg'>
                           <Image
                             alt=''
                             src={image6}
